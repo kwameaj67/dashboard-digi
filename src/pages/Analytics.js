@@ -1,9 +1,10 @@
 import React from 'react'
+import PageTitle from '../components/PageTitle/pageTitle'
 
 const Analytics = () => {
     return(
             <div>
-                  <h1>Analytics</h1>
+                  <PageTitle/>
              </div>
     )
 }

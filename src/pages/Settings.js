@@ -1,9 +1,10 @@
 import React from 'react'
-
+import Page from '../components/MainArea/page'
+import PageTitle from '../components/PageTitle/pageTitle'
 const Settings = () => {
     return(
             <div>
-                  <h1>Settings</h1>
+                  <PageTitle/>
              </div>
     )
 }

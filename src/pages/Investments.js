@@ -1,9 +1,10 @@
 import React from 'react'
+import PageTitle from '../components/PageTitle/pageTitle'
 
 const Investments = () => {
     return(
             <div>
-                  <h1>Investments</h1>
+                <PageTitle/>
              </div>
     )
 }

@@ -1,9 +1,9 @@
 import React from 'react'
-
+import PageTitle from '../components/PageTitle/pageTitle'
 const Wallet = () => {
     return(
             <div>
-                  <h1>Wallet</h1>
+               <PageTitle/>
              </div>
     )
 }

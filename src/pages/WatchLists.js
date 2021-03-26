@@ -1,9 +1,9 @@
 import React from 'react'
-
+import PageTitle from '../components/PageTitle/pageTitle'
 const WatchList = () => {
     return(
             <div>
-                  <h1>WatchList</h1>
+                <PageTitle/>
              </div>
     )
 }
