@@ -1,12 +1,14 @@
 .sideBarArea{
-    width: 300px;
+    width: 280px;
     height: 100%;
-    background-color: #221e75;
+    background-color: #1f47c9;
 }
 .sideBarArea h1{
     color: white;
     display: flex;
-   
+    padding:20px 15px; 
+    text-align: center;
+    cursor: pointer;
 }
 .sideBarArea .sideBarList{
     padding: 0;
@@ -14,14 +16,66 @@
     height: auto;
     width: 100%;
     margin: 0;
-    background-color: violet;
+    padding-top: 20px;
     text-align: left;
-
 }
-.sideBarList .row{
+
+.item{
     display: flex;
     flex-direction: row;
     align-items: center;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
+    /* width: 100vw; */
+    height: 50px;
+    margin: 0;
+    padding:4px 15px; 
+    margin: 5px 20px 5px 20px;
+    transition: 0.3s ease-in;
+    border-radius: 12px;
+    /* justify-content: center; */
+}
+.item .icon{
+    padding-left: 2px;
+}
+.item p{
+    padding-left: 24px;
+    text-decoration-color: transparent;
+}
+.item p:hover{
+    text-decoration: none;
+}
+.item:hover{
+    background-color: #466dee;
+    transition: 0.3s ease-in;
+}
+.sideBarList #active{
+    border-radius: 12px;
+    background-color: #7793ec;
+}
+.logout{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    padding:4px 20px; 
+    height: 50px;
+    margin: 5px 30px 5px 30px;
+    transition: 0.3s ease-in;
+    border-radius: 12px;
+    position: absolute;
+    bottom: 30px;
+    cursor: pointer;
+}
+.logout .logout-icon{
+    padding-left: 2px;
+}
+
+.logout p{
+    padding-left: 24px;
+    font-size: 14px;
+}
+.logout:hover{
+    background-color: #466dee;
+    transition: 0.3s ease-in;
 }
