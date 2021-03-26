@@ -1,32 +1,36 @@
 import React from 'react'
-import { Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./sideBar.css"
 import routes from './sideBarData'
+import {RiLogoutCircleRFill} from 'react-icons/ri'
 
 
 
 const SideBar = () => {
     return (
-        <div class="sideBarArea">
+        <div className="sideBarArea">
                 <h1>Logo</h1>
-                <Switch>
                     <ul className="sideBarList">
                         {
                             routes.map((value, key) => {
                                 return (
-                                    <li>
-                                        <div className="row">
-                                            {/* <Link to={value.path}> */}
-                                                <div>{value.icon}</div>
-                                                <div><p>{value.title}</p></div>
-                                            {/* </Link> */}
-                                        </div>
-                                    </li>
+                                    <div className="row" key={key} >
+                                        <Link to={value.path}>
+                                            <div key={key} className="item" id={value.path === value.title ? "active" : ""}>
+                                                <div className="icon">{value.icon}</div>
+                                                <p>{value.title}</p>
+                                                {/* <div><p>{value.title}</p></div> */}
+                                            </div>
+                                        </Link>
+                                    </div>
                                 )
                             })
                         }
+                    <div className="logout">
+                        <RiLogoutCircleRFill className="logout-icon" size={24}/>
+                        <div><p>Logout</p></div>
+                    </div>
                     </ul>
-                </Switch>
         </div>
     )
 }
