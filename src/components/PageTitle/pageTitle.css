@@ -1,0 +1,12 @@
+.pageTitle{
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    color: #0a2e65;
+    font-family: "Poppins";
+    font-weight: 700;
+    padding: 20px 20px;
+}
+.pageTitle p{
+    font-size: 18px;
+    text-align: center;
+}
