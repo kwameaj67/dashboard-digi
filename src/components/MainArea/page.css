@@ -2,10 +2,11 @@
     width:100%;
     height: 100vh;
     background-color:#f4f7fa;
-    display: flex;
-    justify-content: flex-start;
+     /* display: flex; 
+     flex-direction: row;
+    justify-content: flex-start;  */
 }
-.pageContent{
-    width: auto;
+/* .pageContent{
+    width: 100%;
     height: 200px;
-}
+} */

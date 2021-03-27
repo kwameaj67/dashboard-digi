@@ -15,7 +15,6 @@ const Page = () => {
     const location = useLocation()
     return (
         <div className="pageArea">
-                <div className="pageContent">
                     <CSSTransition
                         key={location.key}
                         classNames="fade"
@@ -32,7 +31,6 @@ const Page = () => {
                             ))}
                         </Switch>
                         </CSSTransition>
-                </div>
         </div>
     )
 }
