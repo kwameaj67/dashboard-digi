@@ -1,12 +1,41 @@
 .pageTitle{
-    text-transform: uppercase;
     letter-spacing: 0.2px;
     color: #0a2e65;
     font-family: "Poppins";
-    font-weight: 700;
-    padding: 20px 20px;
+    padding: 10px 0px;
+    /* width: 100%; */
+    /* height: auto; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin:0px 10px;
+    
 }
+.pageTitle .menu{
+    cursor: pointer;
+    /* display: none; */
+}
+
 .pageTitle p{
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2px;
     text-align: center;
+    text-transform: uppercase;
+}
+.profile{
+    padding:6px 10px;
+    background-color:#1f47c9;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+.profile .profile-icon{
+    color: #0a2e65;
+}
+@media screen and (min-width: 1280px){
+    .menu {
+        display: block;
+    }
 }
