@@ -9,7 +9,10 @@ import {RiLogoutCircleRFill} from 'react-icons/ri'
 const SideBar = () => {
     return (
         <div className="sideBarArea">
-                <h1>Logo</h1>
+                    <div className="greetings">
+                        <h1>Digipocket</h1>
+                        <p>Welcome,{""} <span> Paul</span> </p>
+                    </div>
                     <ul className="sideBarList">
                         {
                             routes.map((value, key) => {
@@ -18,8 +21,8 @@ const SideBar = () => {
                                         <Link to={value.path}>
                                             <div key={key} className="item" id={value.path === value.title ? "active" : ""}>
                                                 <div className="icon">{value.icon}</div>
-                                                <p>{value.title}</p>
-                                                {/* <div><p>{value.title}</p></div> */}
+                                                {/* <p>{value.title}</p> */}
+                                                <div><p>{value.title}</p></div>
                                             </div>
                                         </Link>
                                     </div>
